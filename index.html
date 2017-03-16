@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>StreetDogs</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
@@ -24,19 +24,19 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-    background-image: url('/w3images/parallax1.jpg');
+    background-image: url('/img/home1.jpg');
     min-height: 100%;
 }
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-    background-image: url("/w3images/parallax2.jpg");
+    background-image: url("/img/home2.jpg");
     min-height: 400px;
 }
 
 /* Third image (Contact) */
 .bgimg-3 {
-    background-image: url("/w3images/parallax3.jpg");
+    background-image: url("/img/home3.jpg");
     min-height: 400px;
 }
 
@@ -58,10 +58,11 @@ body, html {
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <a href="#home" class="w3-bar-item w3-button">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#home" class="w3-bar-item w3-button"><i class="fa fa-home" aria-hidden="true"></i> HOME</a>
+    <a href="#info" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-info"></i> INFO</a>
+    <a href="#adopt" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-heart"></i> ADOPÇÃO</a>
+    <a href="#storys" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-book"></i> HISTÓRIAS</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACTOS</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
       <i class="fa fa-search"></i>
     </a>
@@ -69,85 +70,76 @@ body, html {
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">INFO</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">ADOPÇÃO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACTOS</a>
+    <a href="#" class="w3-bar-item w3-button">PROCURA</a>
   </div>
 </div>
 
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">WEBSITE</span> LOGO</span>
+    <span class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">STREETDOGS</span>
   </div>
 </div>
 
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">ABOUT ME</h3>
-  <p class="w3-center"><em>I love photography</em></p>
-  <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-    qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <h3 class="w3-center">STREETDOGS</h3>
+  <p class="w3-center"><em>Esta página, sem fins lucrativos, tem como objectivo, divulgar os animais que resgatamos das ruas, e também apelos externos de animais no Norte do País.
+Temos também como objectivo, alimentar animais errantes, abandonados ou carenciados, divulgá-los e promover a sua adopção de forma responsável, no Concelho de Barcelos, dentro daquilo que for as nossas possibilidades.
+Não somos associação nem temos espaço físico para recolher animais. Este também não é o nosso trabalho. Somos apenas pessoas particulares que tentam fazer pelos animais aquilo que é a obrigação de todos.
+Não recebemos qualquer tipo de ajuda, por isso, se quiser ajudar de alguma forma com bens (ração, mantas, desparasitantes, abrigos, artigos para leiloar...), sendo família de acolhimento temporário, ou monetariamente, p.f. contacte esta pagina.
+Só com a ajuda de todos, este projeto se torna possível.</em></p>
+  <p></p>
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
-      <p><b><i class="fa fa-user w3-margin-right"></i>My Name</b></p><br>
-      <img src="/w3images/avatar_hat.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+      <p><b><i class="fa fa-user w3-margin-right"></i>StreetDogs</b></p><br>
+      <img src="/img/Logo_StreetDogs.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Logo StreetDogs" width="500" height="333">
     </div>
 
     <!-- Hide this text on small devices -->
     <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p>Missão:</p>
+        <p>A nossa missão é que um dia, todas as familias tenham um animal e que todos os animais tenham uma familia, onde sejam amados e respeitados.</p>
+        <p>Obejectivo:</p>
+        <p>Divulgação, para adoçao responsável, dos animais a nosso cargo e outros no Norte do País. Sensibilização para a causa animal. </p>
     </div>
   </div>
-  <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
-  <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
-  </div>
-  <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
-  </div>
-  <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
-  </div>
+  
 </div>
 
 <div class="w3-row w3-center w3-dark-grey w3-padding-16">
   <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">14+</span><br>
-    Partners
+    <span class="w3-xlarge">140+</span><br>
+    Resgates
   </div>
   <div class="w3-quarter w3-section">
     <span class="w3-xlarge">55+</span><br>
-    Projects Done
+    Adopções realizadas
   </div>
   <div class="w3-quarter w3-section">
     <span class="w3-xlarge">89+</span><br>
-    Happy Clients
+    Animais em espera de família
   </div>
   <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">150+</span><br>
-    Meetings
+    <span class="w3-xlarge">1+</span><br>
+    ...
   </div>
 </div>
 
 <!-- Second Parallax Image with Portfolio Text -->
 <div class="bgimg-2 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-light-grey w3-wide">PORTFOLIO</span>
+    <span class="w3-xxlarge w3-text-light-grey w3-wide">ADOPÇÃO</span>
   </div>
 </div>
 
 <!-- Container (Portfolio Section) -->
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
-  <h3 class="w3-center">MY WORK</h3>
-  <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
+  <h3 class="w3-center">HISTÓRIAS</h3>
+  <p class="w3-center"><em>Aqui ficam algumas das mais lindas histórias vividas pelos colaboradores da StreetDogs.<br> Clique nas imagens para </em></p><br>
 
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center">
@@ -200,14 +192,14 @@ body, html {
 <!-- Third Parallax Image with Portfolio Text -->
 <div class="bgimg-3 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-light-grey w3-wide">CONTACT</span>
+     <span class="w3-xxlarge w3-text-light-grey w3-wide">CONTACTOS</span>
   </div>
 </div>
 
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">WHERE I WORK</h3>
-  <p class="w3-center"><em>I'd love your feedback!</em></p>
+  <h3 class="w3-center">ENTRE EM CONTACTO CONNOSCO</h3>
+  <p class="w3-center"><em>Responderemos com brevidade</em></p>
 
   <div class="w3-row w3-padding-32 w3-section">
     <div class="w3-col m4 w3-container">
@@ -216,11 +208,11 @@ body, html {
     </div>
     <div class="w3-col m8 w3-panel">
       <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chicago, US<br>
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Localidade: Barcelos, Portugal<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Tel:<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: streetdogsmail@gmail.com.com<br>
       </div>
-      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+      <p>Dúvidas ou sugestões? Não hesite em deixar mensagem.</p>
       <form action="/action_page.php" target="_blank">
         <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
           <div class="w3-half">
@@ -232,7 +224,7 @@ body, html {
         </div>
         <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
         <button class="w3-button w3-black w3-right w3-section" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          <i class="fa fa-paper-plane"></i> ENVIAR MENSAGEM
         </button>
       </form>
     </div>
@@ -241,23 +233,20 @@ body, html {
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <a href="#home" class="w3-button"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <a href="#home" class="w3-button"><i class="fa fa-arrow-up w3-margin-right"></i>Para o topo</a>
   <div class="w3-xlarge w3-section">
     <i class="fa fa-facebook-official w3-hover-text-indigo"></i>
     <i class="fa fa-instagram w3-hover-text-purple"></i>
-    <i class="fa fa-snapchat w3-hover-text-yellow"></i>
-    <i class="fa fa-pinterest-p w3-hover-text-red"></i>
-    <i class="fa fa-twitter w3-hover-text-light-blue"></i>
     <i class="fa fa-linkedin w3-hover-text-indigo"></i>
   </div>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <p>Development and design by: Juliana Fortes</p>
 </footer>
  
 <!-- Add Google Maps -->
 <script>
 function myMap()
 {
-  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  myCenter=new google.maps.LatLng(41.53205,  8.61905);
   var mapOptions= {
     center:myCenter,
     zoom:12, scrollwheel: false, draggable: false,
