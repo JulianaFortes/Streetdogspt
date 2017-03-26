@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<title>StreetDogs</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/style.css"
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#inicio" class="w3-bar-item w3-button"><i class="fa fa-home" aria-hidden="true"></i> INÍCIO</a>
+    <a href="#info" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-info"></i> INFO</a>
+    <a href="#animal" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-paw"></i> ANIMAIS</a>
+    <a href="#casosurgentes" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-heartbeat"></i> CASOS URGENTES</a>
+    <a href="#comoajudar" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-hand-paper-o"></i> COMO AJUDAR</a>
+    <a href="#parcerias" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-thumbs-o-up"></i> PARCERIAS</a>
+    <a href="#legistacao" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-university"></i> LEGISLAÇÃO</a>
+    <a href="#contatos" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTATOS</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#info" class="w3-bar-item w3-button" onclick="toggleFunction()">INFO</a>
+    <a href="#adopt" class="w3-bar-item w3-button" onclick="toggleFunction()">ADOPÇÃO</a>
+    <a href="#story" class="w3-bar-item w3-button" onclick="toggleFunction()">HISTÓRIAS</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACTOS</a>
+    <a href="#" class="w3-bar-item w3-button">PROCURA</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">
+      <img src="/img/Logo_StreetDosgs.jpg" />
+    </span>
+  </div>
+</div>
+
+<!-- Container (Info Section) -->
+<div class="w3-content w3-container w3-padding-64" id="info">
+  <h3 class="w3-center">STREETDOGS</h3>
+  <p class="w3-center"><em>Esta página, sem fins lucrativos, tem como objectivo, divulgar os animais que resgatamos das ruas, e também apelos externos de animais no Norte do País.
+Temos também como objectivo, alimentar animais errantes, abandonados ou carenciados, divulgá-los e promover a sua adopção de forma responsável, no Concelho de Barcelos, dentro daquilo que for as nossas possibilidades.
+Não somos associação nem temos espaço físico para recolher animais. Este também não é o nosso trabalho. Somos apenas pessoas particulares que tentam fazer pelos animais aquilo que é a obrigação de todos.
+Não recebemos qualquer tipo de ajuda, por isso, se quiser ajudar de alguma forma com bens (ração, mantas, desparasitantes, abrigos, artigos para leiloar...), sendo família de acolhimento temporário, ou monetariamente, p.f. contacte esta pagina.
+Só com a ajuda de todos, este projeto se torna possível.</em></p>
+  <p></p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <img src="/img/Logo_StreetDogs.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Logo StreetDogs" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>Missão:</p>
+        <p>A nossa missão é que um dia, todas as familias tenham um animal e que todos os animais tenham uma familia, onde sejam amados e respeitados.</p>
+        <p>Obejectivo:</p>
+        <p>Divulgação, para adoçao responsável, dos animais a nosso cargo e outros no Norte do País. Sensibilização para a causa animal. </p>
+    </div>
+  </div>
+
+</div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">140+</span><br>
+    Animais resgatados
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">55+</span><br>
+    Adopções realizadas
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">89+</span><br>
+    Animais em espera de família
+  </div>
+    <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">8+</span><br>
+    Animais em tratamento veterinário
+  </div>
+</div>
+
+<!-- Container (Adopt Section) -->
+<div class="w3-content w3-container w3-padding-64" id="adopt">
+<!-- Second Parallax Image with Adoption Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-light-grey w3-wide">ADOPÇÃO</span>
+  </div>
+</div>
+</div>
+
+<!-- Container (Story Section) -->
+<div class="w3-content w3-container w3-padding-64" id="story">
+  <h3 class="w3-center">HISTÓRIAS</h3>
+  <p class="w3-center"><em>Aqui ficam algumas das mais lindas histórias vividas pelos colaboradores da StreetDogs.<br> Clique nas imagens para </em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="/w3images/p1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="/w3images/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+    </div>
+    <button class="w3-button w3-padding-xlarge" style="margin-top:64px">LOAD MORE</button>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Contacts Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-light-grey w3-wide">CONTACTOS</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">ENTRE EM CONTACTO CONNOSCO</h3>
+  <p class="w3-center"><em>Responderemos com brevidade</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <!-- Add Google Maps -->
+      <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Localidade: Barcelos, Portugal<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Tel:<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: streetdogsmail@gmail.com.com<br>
+      </div>
+      <p>Dúvidas ou sugestões? Não hesite em deixar mensagem.</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> ENVIAR MENSAGEM
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button"><i class="fa fa-arrow-up w3-margin-right"></i>Para o topo</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-text-indigo"></i>
+    <i class="fa fa-instagram w3-hover-text-purple"></i>
+    <i class="fa fa-linkedin w3-hover-text-indigo"></i>
+  </div>
+  <p>Development and design by: Juliana Fortes</p>
+</footer>
+
+<!-- Add Google Maps -->
+<script src="js/script.js">
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>
