@@ -6,7 +6,54 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<<<<<<< HEAD
 <link rel="stylesheet" href="css/style.css"
+=======
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('/img/home01.jpg');
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("/img/home2.jpg");
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("/img/home3.jpg");
+    min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+</style>
+>>>>>>> e373502b2223ddbe9fb47805703b717c2a9e6ad9
 <body>
 
 <!-- Navbar (sit on top) -->
@@ -15,6 +62,7 @@
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
+<<<<<<< HEAD
     <a href="#inicio" class="w3-bar-item w3-button"><i class="fa fa-home" aria-hidden="true"></i> INÍCIO</a>
     <a href="#info" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-info"></i> INFO</a>
     <a href="#animal" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-paw"></i> ANIMAIS</a>
@@ -23,6 +71,13 @@
     <a href="#parcerias" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-thumbs-o-up"></i> PARCERIAS</a>
     <a href="#legistacao" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-university"></i> LEGISLAÇÃO</a>
     <a href="#contatos" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTATOS</a>
+=======
+    <a href="#home" class="w3-bar-item w3-button"><i class="fa fa-home" aria-hidden="true"></i> HOME</a>
+    <a href="#info" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-info"></i> INFO</a>
+    <a href="#adopt" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-heart"></i> ADOPÇÃO</a>
+    <a href="#story" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-book"></i> HISTÓRIAS</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACTOS</a>
+>>>>>>> e373502b2223ddbe9fb47805703b717c2a9e6ad9
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
       <i class="fa fa-search"></i>
     </a>
@@ -41,9 +96,13 @@
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
+<<<<<<< HEAD
     <span class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">
       <img src="/img/Logo_StreetDosgs.jpg" />
     </span>
+=======
+    <span class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">STREETDOGS</span>
+>>>>>>> e373502b2223ddbe9fb47805703b717c2a9e6ad9
   </div>
 </div>
 
@@ -69,7 +128,11 @@ Só com a ajuda de todos, este projeto se torna possível.</em></p>
         <p>Divulgação, para adoçao responsável, dos animais a nosso cargo e outros no Norte do País. Sensibilização para a causa animal. </p>
     </div>
   </div>
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> e373502b2223ddbe9fb47805703b717c2a9e6ad9
 </div>
 
 <div class="w3-row w3-center w3-dark-grey w3-padding-16">
@@ -206,9 +269,59 @@ Só com a ajuda de todos, este projeto se torna possível.</em></p>
   </div>
   <p>Development and design by: Juliana Fortes</p>
 </footer>
+<<<<<<< HEAD
 
 <!-- Add Google Maps -->
 <script src="js/script.js">
+=======
+ 
+<!-- Add Google Maps -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(41.53205,  8.61905);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+>>>>>>> e373502b2223ddbe9fb47805703b717c2a9e6ad9
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
 <!--
