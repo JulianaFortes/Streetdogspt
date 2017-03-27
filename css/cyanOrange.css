@@ -1,0 +1,29 @@
+a:hover, a:active {
+	/*SECONDARY COLOR*/
+	color:rgba(255, 109, 0, 1);
+}
+
+.image-turn-effect figure figcaption {
+	/*SECONDARY COLOR OPACITY HALF*/
+    background-color:rgba(255, 109, 0, 0.5);
+}
+
+.info a:link, .info a:hover, .info a:active, .info a:visited {
+	/*SECONDARY COLOR*/
+	color:rgba(255, 109, 0, 1);
+}
+
+.info-with-back a:link, .info-with-back a:hover, .info-with-back a:active, .info-with-back a:visited, .button-orange, .floating-icon-right-bottom {
+	/*SECONDARY COLOR*/
+	color:rgba(255, 109, 0, 1) !important;
+}
+
+ul.orange-link a:link, ul.orange-link a:hover, ul.orange-link a:active, ul.orange-link a:visited {
+	/*SECONDARY COLOR*/
+	color:rgba(255, 109, 0, 1);
+}
+
+.view-first .mask {
+	/*PRIMARY COLOR*/
+    background-color: rgba(0, 96, 100, 0.8); 
+}
