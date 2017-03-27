@@ -51,4 +51,5 @@ body, html {
 
 .div_parcerias{
   background-image: url("/img/parcerias_fundo.jpeg");
+  min-height: 100%;
 }
