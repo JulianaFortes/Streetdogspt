@@ -28,7 +28,7 @@ body, html {
 }
 /* Fourth image (Contact) */
 .bgimg-4 {
-    background-image: url("/img/home4.jpeg");
+    background-image: url("/img/contactos_fundo.jpg");
     min-height: 400px;
 }
 
@@ -49,7 +49,7 @@ body, html {
   margin-right: auto;
 }
 
-.div_parcerias{
+#parcerias{
   background-image: url("/img/parcerias_fundo.jpeg");
-  min-height: 100%;
+  min-height: 400px;
 }
