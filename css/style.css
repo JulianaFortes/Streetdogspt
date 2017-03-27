@@ -58,15 +58,17 @@ body, html {
 
 }
 
-.image {
+.image-card {
     min-height: 400px;
     overflow: hidden;
     text-align:center;
     position: relative;
+}
 
-    /* código abaixo não relevante, só para o estilo! */
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+.image{
+  max-width:250px;
+  max-height:200px;
+  width: auto;
+  height: auto;
+
 }
