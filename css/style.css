@@ -13,12 +13,12 @@ body, html {
 }
 /* First image (Logo. Full height) */
 .bgimg-1 {
-    background-image: url('/img/home01.jpg');
+    background-image: url("/img/home01.jpg");
     min-height: 100%;
 }
 /* Second image (Adoção) */
 .bgimg-2 {
-    background-image: url('img/home2.jpg');
+    background-image: url("/img/home2.jpg");
     min-height: 400px;
 }
 /* Third image (Apelos Externos) */
