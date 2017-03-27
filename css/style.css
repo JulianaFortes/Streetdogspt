@@ -50,6 +50,10 @@ body, html {
 }
 
 #parcerias{
-  background-image: url("/img/parcerias_fundo.jpeg");
-  min-height: 400px;
+  background-color: grey;
+  text-align:center;
+  padding-top:100px;
+  padding-bottom:100px;
+  position:relative;
+
 }
