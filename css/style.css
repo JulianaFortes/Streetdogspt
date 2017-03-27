@@ -64,11 +64,3 @@ body, html {
     text-align:center;
     position: relative;
 }
-
-.image{
-  max-width:30px;
-  max-height:20px;
-  width: auto;
-  height: auto;
-
-}
