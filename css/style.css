@@ -13,22 +13,22 @@ body, html {
 }
 /* First image (Logo. Full height) */
 .bgimg-1 {
-    background-image: url("/img/home01.jpg");
+    background-image: url("/img/home_fundo.jpg");
     min-height: 100%;
 }
 /* Second image (Adoção) */
 .bgimg-2 {
-    background-image: url("/img/home2.jpg");
+    background-image: url("/img/adopt_fundo.jpg");
     min-height: 400px;
 }
 /* Third image (Apelos Externos) */
 .bgimg-3 {
-    background-image: url('img/home3.jpg');
+    background-image: url("/img/home3.jpg");
     min-height: 400px;
 }
 /* Fourth image (Contact) */
 .bgimg-4 {
-    background-image: url('img/home4.jpg');
+    background-image: url("/img/home4.jpeg");
     min-height: 400px;
 }
 .w3-wide {letter-spacing: 10px;}
