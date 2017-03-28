@@ -1,4 +1,4 @@
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body,h1,h2,h3,h4,h5,h6, letras_laranja {font-family: "Lato", sans-serif;}
 body, html {
     height: 100%;
     color: #777;
@@ -12,7 +12,10 @@ body, html {
     background-size: cover;
 }
 
-
+.letras_laranja{
+  font-size: 40px;
+  text-decoration-color: orange;
+}
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
