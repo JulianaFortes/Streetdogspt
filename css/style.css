@@ -5,7 +5,7 @@ body, html {
     line-height: 1.8;
 }
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6 {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -18,7 +18,7 @@ body, html {
 }
 
 .borda_img{
-  border: 3px solid #777;
+  border: 5px solid #777;
 }
 
 /* First image (Logo. Full height) */
@@ -41,9 +41,15 @@ body, html {
     background-image: url("/img/contactos_fundo.jpg");
     min-height: 400px;
 }
-/* Fifth image (FAT) */
+/* Fifth image (Como ajudar) */
 .bgimg-5 {
-    background-image: url("/img/fat_fundo.jpg");
+    background-image: url("/img/fundo_comoajudar.jpg");
+    min-height: 400px;
+}
+
+/* Sixth image (Familias carenciadas) */
+.bgimg-6 {
+    background-image: url("/img/fundo_famcarenciadas.jpg");
     min-height: 400px;
 }
 
