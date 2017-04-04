@@ -53,6 +53,12 @@ body, html {
     min-height: 400px;
 }
 
+.img_logo{
+  max-width: 100%;
+  height: auto;
+  display:block;
+}
+
 
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}

@@ -32,6 +32,7 @@ footer {
 
 
 .img_logo{
-  background-image: url("/img/Logo_StreetDogs.jpg");
-  background-position: center;
+  max-width: 100%;
+  height: auto;
+  display:block;
 }
