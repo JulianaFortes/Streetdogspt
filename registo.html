@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/registo.css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
@@ -23,26 +24,30 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Registar Novo</a></li>
-        <li><a href="#">Ver Registos</a></li>
+        <li class="active"><a href="">Registar Novo</a></li>
+        <li><a href="listaRegistos.html">Ver Registos</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+        <li><a href="index.html"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
+<div class="bgimg-1 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <img src="/img/Logo_StreetDogs.jpg" class="img_logo"/>
+  </div>
+</div>
+
 <div class="container-fluid text-center">
   <div class="row content">
-
     <div class="col-sm-12 text-left">
-      <img src="img/Logo_StreetDogs.jpg" class="img_logo"/>
-
-      <h1>Registo Animal</h1>
+      <br />
+      <h1>Registo Animal</h1><br />
 
       <form>
-        <h2>Informação Básica</h2>
+        <h2>Informação Básica</h2><br />
         <div class="form-group">
           <label for="numRegisto">Número do registo:</label>
           <input type="number" class="form-control" id="numRegisto" placeholder="Registo">
@@ -139,7 +144,7 @@
         </div>
         <div class="form-group">
           <label for="contactAdopt">Contactos:</label>
-          <input type="text" class="form-control" id="MoradaAdopt" placeholder="Morada do Adotante">
+          <input type="text" class="form-control" id="MoradaAdopt" placeholder="Morada do Adotante"><br />
           <input type="number" class="form-control" id="numTelAdopt" placeholder="Contacto telefónico">
         </div>
 
@@ -163,21 +168,19 @@
           <label for="observacoes">Observações:</label>
           <textarea class="form-control" rows="7" id="observações"></textarea>
         </div>
+        <br />
 
+        <div class="btn_fat">
+          <button class="w3-button w3-black w3-center w3-section" type="submit">
+            <a href="" style="text-decoration:none">
+              <i class="fa fa-hand-pointer-o"></i>GUARDAR
+            </a>
+          </button>
+        </div>
 
-
-
-
-
-
-
-
-
-    <button type="submit" class="btn btn-default">Submit</button>
-  </form>
+      </form>
 
     </div>
-
   </div>
 </div>
 

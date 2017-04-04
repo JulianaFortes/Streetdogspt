@@ -32,7 +32,16 @@ footer {
 
 
 .img_logo{
+  text-align: center;
   max-width: 100%;
   height: auto;
   display:block;
+  
+}
+
+.btn_fat{
+  text-align: center;
+  margin:0;
+  padding:0;
+
 }
