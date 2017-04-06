@@ -42,12 +42,39 @@
       <br />
       <h1>Registo Animal</h1><br />
 
-      <form>
+      <form id="registo-form" action="#" method="POST">
+
         <h2>Informação Básica</h2><br />
+
+        <label style="color:red">Foto</label>
+
         <div class="form-group">
-          <label for="numRegisto">Número do registo:</label>
-          <input type="number" class="form-control" id="numRegisto" placeholder="Registo">
+          <label for="numRegisto">Número de registo:</label>
+          <input type="number" class="form-control" id="numRegisto" placeholder="">
         </div>
+        <br />
+        <label>Tipo de Animal:</label>
+        <label></label>
+        <div class="radio">
+          <label><input type="radio" name="optradio">Cão</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="optradio">Gato</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="optradio">Outro:</label>
+          <input type="text" class="form-control" id="outroTipoAnimal" placeholder="Qual?">
+        </div>
+        <br />
+        <label>Sexo do Animal:</label>
+        <div class="radio">
+          <label><input type="radio" name="optradio">Macho</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="optradio">Fémea</label>
+        </div>
+        <br />
+
         <div class="form-group">
           <label for="nomeStreet">Nome (StreetDogs):</label>
           <input type="text" class="form-control" id="NomeStreet" placeholder="Escreva o nome dado pela StreetDogs">
@@ -56,14 +83,39 @@
           <label for="nomeAdopt">Nome (Adoção):</label>
           <input type="text" class="form-control" id="NomeAdop" placeholder="Escreva o nome dado pelo adotante">
         </div>
+        <br />
         <div class="form-group">
-          <label for="dataResgate">Data de Resgate:</label>
-          <input type="date" class="form-control" id="dataResgate" placeholder="">
+          <label for="dataNascimento">Data de Nascimento:</label>
+          <div class="radio">
+            <label><input type="radio" value="">Desconhecida</label>
+          </div>
+          <div class="radio">
+            <label><input type="radio" value="">Conhecida</label>
+            <input type="date" class="form-control" id="dataNascimento" placeholder="">
+          </div>
         </div>
+        <br />
         <div class="form-group">
           <label for="microchip">Microchip:</label>
           <input type="number" class="form-control" id="microchip" placeholder="Número do Microchip">
         </div>
+        <br />
+        <br />
+
+        <h2>Características Físicas</h2><br />
+        <div class="form-group">
+          <label for="peso">Peso:</label>
+          <input type="number" class="form-control" id="peso" placeholder="Peso em quilogramas">
+        </div>
+        <div class="form-group">
+          <label for="altura">Altura:</label>
+          <input type="number" class="form-control" id="altura" placeholder="Altura em metros">
+        </div>
+        <div class="form-group">
+          <label for="">Data da medição:</label>
+          <input type="date" class="form-control" id="dataMedicao" placeholder="">
+        </div>
+
         <br />
         <label>Tipo de pêlo:</label>
         <div class="radio">
@@ -77,6 +129,10 @@
         </div>
         <div class="radio">
           <label><input type="radio" value="">Ondulado Comprido</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" value="">Outro:</label>
+          <input type="Text" class="form-control" id="outroTipoPelo" placeholder="Qual?">
         </div>
         <br />
         <label>Cor do pêlo:</label>
@@ -101,35 +157,33 @@
         <div class="checkbox">
           <label><input type="checkbox" value="">Amarelado</label>
         </div>
-        <br />
-        <div class="form-group">
-          <label for="comment">Doenças Conhecidas:</label>
-          <textarea class="form-control" rows="3" id="doencas"></textarea>
+        <div class="checkbox">
+          <label><input type="checkbox" value="">Outro:</label>
+          <input type="text" class="form-control" id="outroTipoPelo" placeholder="Qual?">
         </div>
         <br />
-        <label>Esterilizado?</label>
-        <div class="radio">
-          <label><input type="radio" name="optradio">Sim</label>
-        </div>
-        <div class="radio">
-          <label><input type="radio" name="optradio">Não</label>
-        </div>
         <br />
-        <label>Situação atual:</label>
+
+        <h2>Situação actual</h2><br />
+
         <div class="checkbox">
           <label><input type="checkbox" value="">Está em FAT</label>
         </div>
         <div class="checkbox">
+          <label><input type="checkbox" value="">Adoptado</label>
+        </div>
+        <div class="checkbox">
           <label><input type="checkbox" value="">Aguarda FAT</label>
+          <input type="text" class="form-control" id="aguardaFat" placeholder="Onde?">
         </div>
         <div class="checkbox">
           <label><input type="checkbox" value="">Está na rua</label>
-        </div>
-        <div class="checkbox">
-          <label><input type="checkbox" value="">Adoptado</label>
+          <input type="text" class="form-control" id="estaRua" placeholder="Onde?">
         </div>
         <br />
-        <label>A secção a seguir só aparecerá se a resposta à pergunta anterior for ADOTADO</label>
+
+        <label style="color:red">A secção a seguir só aparecerá se a resposta à pergunta anterior for ADOTADO</label><br />
+        <label style="color:red">Aqui haverá um histórico de adoções (o animal pode ser devolvido depois de uma doção)</label>
         <div class="form-group">
           <label for="dataAdocao">Adotado em:</label>
           <input type="date" class="form-control" id="dataAdocao" placeholder="">
@@ -143,31 +197,193 @@
           <input type="text" class="form-control" id="MoradaAdopt" placeholder="Morada do Adotante"><br />
           <input type="number" class="form-control" id="numTelAdopt" placeholder="Contacto telefónico">
         </div>
-        <br />
-        <br />
-        <h2>Informação de Saúde</h2>
         <div class="form-group">
-          <label for="dataVacina">Data da última vacina:</label>
-          <input type="date" class="form-control" id="dataVacina" placeholder="">
+          <label for="observacoes">Observações:</label>
+          <textarea class="form-control" rows="3" id="observações"></textarea>
         </div>
+
+        <label style="color:red">A secção a seguir só aparecerá se a resposta à pergunta anterior for ESTÁ EM FAT</label><br />
+        <label style="color:red">Aqui haverá um histórico de FATs</label>
+        <div class="form-group">
+          <label for="dataFAT">Está nesta FAT desde:</label>
+          <input type="date" class="form-control" id="dataFAT" placeholder="">
+        </div>
+        <div class="form-group">
+          <label for="nomeFAT">Nome da FAT:</label>
+          <input type="text" class="form-control" id="nomeFAT" placeholder="Nome do responsável">
+        </div>
+        <div class="form-group">
+          <label for="contactAdopt">Contactos:</label>
+          <input type="text" class="form-control" id="MoradaAdopt" placeholder="Morada da FAT"><br />
+          <input type="number" class="form-control" id="numTelAdopt" placeholder="Contacto telefónico">
+        </div>
+        <div class="form-group">
+          <label for="observacoes">Observações:</label>
+          <textarea class="form-control" rows="3" id="observações"></textarea>
+        </div>
+        <br />
+        <br />
+
+
+        <h2>Informação do Resgate</h2>
+        <div class="form-group">
+          <label for="dataResgate">Data de Resgate:</label>
+          <input type="date" class="form-control" id="dataResgate" placeholder="">
+        </div>
+        <div class="form-group">
+          <label for="condResgate">Condições em que se encontrava o animal:</label>
+          <textarea class="form-control" rows="5" id=""></textarea>
+        </div>
+        <div class="form-group">
+          <label for="localResgate">Local do Resgate:</label>
+          <input type="text" class="form-control" id="localResgate" placeholder="Local do Resgate">
+        </div>
+        <div class="form-group">
+          <label for="localResgate">Quem fez o Resgate:</label>
+          <input type="text" class="form-control" id="localResgate" placeholder="Nome da pessoa que fez o resgate">
+        </div>
+        <br />
+        <br />
+
+
+
+
+        <h2>Informação de Saúde</h2>
+
+        <div class="form-group">
+          <label for="comment">Doenças Conhecidas:</label>
+          <textarea class="form-control" rows="3" id="doencas"></textarea>
+        </div>
+        <br />
+
+        <h4><b>Esterilização</b></h4>
+        <label>Esterilizado?</label>
+        <div class="radio">
+          <label><input type="radio" value="">Não</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" value="">Sim</label>
+        </div>
+        <label style="color:red">O que está a seguir só aparecerá se a resposta anterior for SIM</label>
+        <div class="form-group">
+          <label for="">Data da esterilização:</label>
+          <input type="date" class="form-control" id="dataEsterilizacao" placeholder="">
+        </div>
+        <div class="form-group">
+          <label for="">Local:</label>
+          <input type="text" class="form-control" id="dataEsterilizacao" placeholder="Local da esterilização">
+        </div>
+        <div class="form-group">
+          <label>Observações:</label>
+          <textarea class="form-control" rows="3" id="observações"></textarea>
+        </div>
+        <label style="color:red">Abrir histórico de vacinas</label>
+        <br />
+        <br />
+
+
+        <h4><b>Vacinas</b></h4>
+        <div class="form-group">
+          <label for="dataVacina">Data e tipo da última vacina:</label>
+          <input type="date" class="form-control" id="dataVacina" placeholder="">
+          <input type="text" class="form-control" id="tipoVacina" placeholder="Tipo de vacina">
+        </div>
+        <label style="color:red">Abrir histórico de vacinas</label>
+        <br />
+        <br />
+
+        <h4><b>Desparasitação</b></h4>
         <div class="form-group">
           <label for="dataDesparasitacao">Data da última desparasitação:</label>
           <input type="date" class="form-control" id="dataDesparasitacao" placeholder="">
         </div>
-        <br />
-        <label>Desparasitação:</label>
+        <label>Tipo de desparasitação:</label>
         <div class="checkbox">
           <label><input type="checkbox" value="">Interna</label>
         </div>
         <div class="checkbox">
           <label><input type="checkbox" value="">Externa</label>
         </div>
+        <label style="color:red">Abrir histórico de desparasitações</label>
         <br />
+        <br />
+
+        <h4><b>Medições</b></h4>
+        <div class="form-group">
+          <label for="peso">Peso:</label>
+          <input type="number" class="form-control" id="peso" placeholder="Peso em quilogramas">
+        </div>
+        <div class="form-group">
+          <label for="">Data da pesagem:</label>
+          <input type="date" class="form-control" id="dataPesagem" placeholder="">
+        </div>
+        <div class="form-group">
+          <label for="altura">Altura:</label>
+          <input type="number" class="form-control" id="altura" placeholder="Altura em metros">
+        </div>
+        <div class="form-group">
+          <label for="">Data da medição:</label>
+          <input type="date" class="form-control" id="dataMedicao" placeholder="">
+        </div>
+        <label style="color:red">Abrir histórico das medições</label>
+        <br />
+        <br />
+
+        <h4><b>Alimentação</b></h4>
+        <div class="form-group">
+          <label for="observacoes">Registo da alimentação:</label>
+          <textarea class="form-control" rows="5" id="observaçõesAlimentacao"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="">Data do registo:</label>
+          <input type="date" class="form-control" id="dataRegistoAlimentacao" placeholder="">
+        </div>
+        <label style="color:red">Abrir histórico dos registos sobre alimentação</label>
+        <br />
+        <br />
+
+        <h4><b>Consultas veterinárias</b></h4>
+        <label>Última consulta veterinária:</label><br />
+        <label style="color:red">Esta secção da última consulta só aparece se houver pelo menos uma consulta</label>
+        <div class="form-group">
+          <label for="dataVacina">Data da consulta:</label>
+          <input type="date" class="form-control" id="dataConsulta" placeholder="">
+        </div>
+        <div class="form-group">
+          <label for="observacoes">Observações:</label>
+          <textarea class="form-control" rows="7" id="Prescrição de tratamentos e/ou medicação entre outras observações "></textarea>
+        </div>
+        <label style="color:red">Ver exames/documentos</label>
+        <br />
+        <br />
+
+
+        <label>Criar nova consulta veterinária:</label>
+        <div class="form-group">
+          <label for="dataVacina">Data da consulta:</label>
+          <input type="date" class="form-control" id="dataConsulta" placeholder="">
+        </div>
+        <div class="form-group">
+          <label for="observacoes">Observações:</label>
+          <textarea class="form-control" rows="7" id="Prescrição de tratamentos e/ou medicação entre outras observações "></textarea>
+        </div>
+        <label style="color:red">Anexar exames/documentos</label>
+        <br />
+        <label style="color:red">Abrir histórico das consultas veterinárias</label>
+        <br />
+        <br />
+        <br />
+
         <div class="form-group">
           <label for="observacoes">Observações:</label>
           <textarea class="form-control" rows="7" id="observações"></textarea>
         </div>
         <br />
+        <br />
+
+
+
+
 
         <div class="btn_fat">
           <button class="w3-button w3-black w3-center w3-section" type="submit">
