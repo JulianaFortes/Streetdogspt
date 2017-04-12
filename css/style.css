@@ -123,6 +123,10 @@ body, html {
   font-size:20px!important;
 }
 
-.p_ajuda{
-  font-size:20px;
+.p_ajuda_1texto{
+  font-size:20px!important;
+}
+
+.p_ajuda_textoSeguinte{
+  font-size:17px!important
 }
