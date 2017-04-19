@@ -1,27 +1,52 @@
-document.getElementById("download").addEventListener("click", download, false);
+$( document ).ready(function() {
 
+var main = "../db/main.csv"
 
-function download(e) {
+var initialize = function(novo){
 
-    data = [["id","value"]];
+  var animal={ registo: null,
+               name: null,
+              };
 
-    var f = d3.selectAll("#csvForm > input")[0];
+  if(novo===0){
 
-    f.forEach(function(d,i){
-      	data.push([d.id, d.value]);
+    $("#btn_guardar").click(function(){
+      alert("ola");
+      criarNovo();
     });
 
-    console.log(data);
 
-    var csvContent = "data:text/csv;charset=utf-8,";
-    data.forEach(function (d, i) {
-        dataString = d.join(",");
-        csvContent += i < data.length ? dataString + "\n" : dataString;
-    });
+  } else{
 
-    var encodedUri = encodeURI(csvContent);
-    var link = document.createElement("a");
-    link.setAttribute("href", encodedUri);
-    link.setAttribute("download", "FormRegisto.csv");
-    link.click();
+  }
+
 }
+
+var criarNovo = function(){
+
+
+
+    var fso, iStream, n, csv=[];
+alert("ola2");
+
+
+    fso=new ActiveXObject('Scripting.FileSystemObject');
+
+
+    iStream=fso.OpenTextFile(main,1,true);
+
+
+
+    for(n=0;!iStream.AtEndOfStream;n++){
+        csv[n]=iStream.ReadLine().split(';');
+    }
+    iStream.Close();
+    //return csv;
+
+    console.log(csv);
+
+};
+
+initialize(0);
+
+});
