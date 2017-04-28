@@ -28,28 +28,28 @@ body, html {
 }
 /* Second image (Adoção) */
 .bgimg-2 {
-    background-image: url("/img/adopt_fundo.jpg");
+    background-image: url("/img/fundo_2.jpg");
     min-height: 400px;
 }
 /* Third image (Apelos Externos) */
 .bgimg-3 {
-    background-image: url("/img/apexternos_fundo.jpg");
+    background-image: url("/img/fundo_3.jpg");
     min-height: 400px;
 }
 /* Fourth image (Contact) */
 .bgimg-4 {
-    background-image: url("/img/contactos_fundo.jpg");
+    background-image: url("/img/fundo_4.jpg");
     min-height: 400px;
 }
 /* Fifth image (Como ajudar) */
 .bgimg-5 {
-    background-image: url("/img/fundo_comoajudar.jpg");
+    background-image: url("/img/fundo_5.jpg");
     min-height: 400px;
 }
 
 /* Sixth image (Familias carenciadas) */
 .bgimg-6 {
-    background-image: url("/img/fundo_famcarenciadas.jpg");
+    background-image: url("/img/fundo_6.jpg");
     min-height: 400px;
 }
 
