@@ -28,9 +28,9 @@
     <a href="#iniciativas" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-sign-language"></i> INICIATIVAS</a>
     <a href="#comoajudar" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-hand-paper-o"></i> COMO AJUDAR</a>
     <a href="#parcerias" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-handshake-o"></i> PARCERIAS</a>
-    <a href="#legistacao" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-university"></i> LEGISLAÇÃO</a>
+    <a href="#legislacao" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-university"></i> LEGISLAÇÃO</a>
     <a href="#contatos" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTATOS</a>
-    <a href="indexRegisto.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-sign-in"></i> LOGIN</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-sign-in"></i> LOGIN</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
 
     </a>
@@ -49,7 +49,7 @@
     <a href="#parcerias" class="w3-bar-item w3-button" onclick="toggleFunction()">PARCERIAS</a>
     <a href="#legislacao" class="w3-bar-item w3-button" onclick="toggleFunction()">LEGISLAÇÃO</a>
     <a href="#contatos" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTATOS</a>
-    <a href="indexRegisto.html" class="w3-bar-item w3-button" onclick="toggleFunction()">LOGIN</a>
+    <a href="#" class="w3-bar-item w3-button" onclick="document.getElementById('id01').style.display='block'">LOGIN</a>
   </div>
 </div>
 
@@ -65,11 +65,39 @@
 </div>
 
 
+<!-- Container Login-->
+
+<div id="id01" class="modal">
+
+  <form class="modal-content animate" action="/indexRegisto.html">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img/Logo_StreetDogs.jpg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit" onclick="check(this.form)">Login</button>
+      <input type="checkbox" checked="checked"> Lembrar
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+      </div>
+  </form>
+</div> <!-- div login -->
+
+
 
 
 <!-- Container (Info Section) -->
 <div class="w3-content w3-container w3-padding-64" id="info">
-  <h3 class="w3-center">STREETDOGS</h3>
+  <h3 class="w3-center"><b>STREETDOGS</b></h3>
   <p class="w3-center p_info"><em>Não somos associação nem temos espaço físico para recolher animais.
     Este também não é o nosso trabalho, fazemos isto em regime de voluntariado. Somos apenas pessoas
     particulares, com um objetivo comum,  que tentam fazer pelos animais aquilo que é a obrigação de todos.</em></p>
@@ -102,7 +130,7 @@
 <!-- Container (Adopt Section) -->
 <div class="bgimg-2 w3-display-container w3-opacity-min" id="adopt">
     <div class="w3-display-middle">
-      <span class="w3-xxlarge w3-text-light-grey w3-wide">ADOÇÃO</span>
+      <span class="w3-xxlarge w3-text-light-grey w3-wide"><b>ADOÇÃO</b></span>
     </div>
 </div>
 <br />
@@ -156,7 +184,7 @@
 <!-- Container (FAT Section) -->
 <div class="w3-row w3-center w3-dark-grey w3-padding-16 w3-container" id="fat">
   <br />
-  <h1>FAMÍLIAS DE ACOLHIMENTO TEMPORÁRIO</h1>
+  <h1><b>FAMÍLIAS DE ACOLHIMENTO TEMPORÁRIO</b></h1>
   <br />
 </div>
 
@@ -261,7 +289,7 @@
 <!-- Parallax Image with Apelos Externos Text-->
 <div class="bgimg-3 w3-display-container w3-opacity-min" id="apexternos">
   <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-light-grey w3-wide">APELOS EXTERNOS</span>
+    <span class="w3-xxlarge w3-text-light-grey w3-wide"><b>APELOS EXTERNOS</b></span>
   </div>
 </div>
 
@@ -358,7 +386,7 @@
 <!-- Third Parallax Image with Familias carenciadas Text-->
 <div class="bgimg-6 w3-display-container w3-opacity-min" id="famcarenciadas">
   <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-light-grey w3-wide">PROGRAMA FAMÍLIAS CARENCIADAS</span>
+    <span class="w3-xxlarge w3-text-light-grey w3-wide"><b>PROGRAMA FAMÍLIAS CARENCIADAS</b></span>
   </div>
 </div>
 <div class="w3-content w3-container w3-padding-64" >
@@ -422,7 +450,8 @@
 <!-- Container Iniciativas -->
 <div class="w3-row w3-center w3-dark-grey w3-padding-16 w3-container" id="iniciativas">
   <br />
-  <h1>INICIATIVAS STREETDOGS</h1>
+  <h1><b>INICIATIVAS STREETDOGS</b></h1>
+  <br />
   <br />
   <div class="w3-row-padding">
     <div class="w3-quarter w3-center">
@@ -452,7 +481,7 @@
 <!-- Container Como Ajudar-->
 <div class="bgimg-5 w3-display-container w3-opacity-min" id="comoajudar">
   <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-light-grey w3-wide">COMO AJUDAR </span>
+    <span class="w3-xxlarge w3-text-light-grey w3-wide"><b>COMO AJUDAR</b></span>
   </div>
 </div>
 <br />
@@ -661,7 +690,7 @@
 <div class="w3-row w3-center w3-dark-grey w3-padding-16 w3-container" id="parcerias">
   </br>
   </br>
-  <h1>PARCERIAS</h1>
+  <h1><b>PARCERIAS</b></h1>
   </br>
   </br>
   <!-- Parcerias Container -->
@@ -789,7 +818,7 @@
   <!-- Container legislação -->
   <br />
   <div id="legislacao" id="legislacao">
-    <h1 class="w3-center">LEGISLAÇÃO</h1>
+    <h1 class="w3-center"><b>LEGISLAÇÃO</b></h1>
 
 
   </div>
@@ -801,7 +830,7 @@
 <!-- Parallax Image with Contacts Text -->
 <div class="bgimg-4 w3-display-container w3-opacity-min" id="contatos">
   <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-light-grey w3-wide">CONTACTOS</span>
+     <span class="w3-xxlarge w3-text-light-grey w3-wide"><b>CONTACTOS</b></span>
   </div>
 </div>
 
@@ -811,11 +840,6 @@
   <p class="w3-center"><em>Responderemos com brevidade</em></p>
 
   <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m4 w3-container">
-      <!-- Add Google Maps -->
-      <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>
-    </div>
-
     <div class="foot_redes ">
       <a href="https://www.facebook.com/streetdogspt/?fref=ts" class="fa fa-facebook-official w3-hover-text-indigo" style="text-decoration:none"></a>
       <a href="https://www.instagram.com/streetdogsmail/" class="fa fa-instagram w3-hover-text-purple" style="text-decoration:none"></a>
@@ -866,10 +890,9 @@
 
 <script src="/css/cyanOrange.js"></script>
 <script src="/js/customJavascript.js"></script>
-<!-- Add Google Maps -->
 <script src="js/script.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
-<!--
+<script src="js/login.js"></script>
+
 To use this code on your website, get a free API key from Google.
 Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 -->
