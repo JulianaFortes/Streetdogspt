@@ -36,6 +36,25 @@ $('input[name=esterilizado]').click(function () {
 
 
 
+/* Smooth scrolling */
 
+$(document).ready(function(){
+
+    $("a[href^='#']").on('click', function(e) {
+        e.preventDefault();
+        hash = this.hash.split('#');
+        $('html, body').animate({
+            scrollTop: $('#' + hash[1]).offset().top
+        }, 1000);
+    });
+    
+    $("a[href^='#div_top_banner']").on('click', function(e) {
+        e.preventDefault();
+        hash = this.hash.split('#');
+        $('html, body').animate({
+            scrollTop: $('#' + hash[1]).offset().top
+        }, 1000);
+    });
+});
 
 
