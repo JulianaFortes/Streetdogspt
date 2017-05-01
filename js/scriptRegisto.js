@@ -1,17 +1,16 @@
 $( document ).ready(function() {
 
-var main = "../db/main.csv"
+var main = "../db/ola.txt"
 
 var initialize = function(novo){
 
   var animal={ registo: null,
-               name: null,
+               name: null
               };
 
   if(novo===0){
 
     $("#btn_guardar").click(function(){
-      alert("ola");
       criarNovo();
     });
 
@@ -27,10 +26,12 @@ var criarNovo = function(){
 
 
     var fso, iStream, n, csv=[];
-alert("ola2");
 
+    console.log(fopen(main,3));
 
-    fso=new ActiveXObject('Scripting.FileSystemObject');
+    //fso=new ActiveXObject('Scripting.FileSystemObject');
+
+    alert("ola2");
 
 
     iStream=fso.OpenTextFile(main,1,true);

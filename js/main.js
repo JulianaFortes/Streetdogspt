@@ -48,7 +48,7 @@ $(document).ready(function(){
         }, 1000);
     });
     
-    $("a[href^='#div_top_banner']").on('click', function(e) {
+    $("a[href^='#inicio']").on('click', function(e) {
         e.preventDefault();
         hash = this.hash.split('#');
         $('html, body').animate({
