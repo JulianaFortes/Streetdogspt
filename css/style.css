@@ -5,7 +5,7 @@ body, html {
     line-height: 1.8;
 }
 /* Create a Parallax Effect */
-.img_carousel1, .img_carousel2, .img_carousel3, .img_carousel4, .img_carousel5, .img_carousel6, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6 {
+.img_carousel, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6 {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -17,36 +17,6 @@ body, html {
   color: #DF7401;
 }
 
-/***** IMAGENS DOS CARROSSEIS *****/
-.img_carousel1{
-    background-image: url("../img/fundo_11.jpg");
-    min-height: 400px;
-}
-
-.img_carousel2{
-    background-image: url("../img/fundo_12.jpg");
-    min-height: 400px;
-}
-
-.img_carousel3{
-    background-image: url("../img/fundo_13.jpg");
-    min-height: 400px;
-}
-
-.img_carousel4{
-    background-image: url("../img/fundo_14.jpg");
-    min-height: 400px;
-}
-
-.img_carousel5{
-    background-image: url("../img/fundo_15.jpg");
-    min-height: 400px;
-}
-
-.img_carousel6{
-    background-image: url("../img/fundo_16.jpg");
-    min-height: 400px;
-}
 
 
 
@@ -326,8 +296,6 @@ span.psw {
     -ms-transform:translate(-50%,-50%);
 
 }
-
-
 
 
 .bottom_redes{
