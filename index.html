@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html">
+<html xmlns="http://www.w3.org/1999/html" xmlns:style="http://www.w3.org/1999/xhtml">
 <title>StreetDogs</title>
-<link rel="shortcut icon" href="/img/icon.png" />
+<link rel="shortcut icon" href="img/icon.png" />
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/w3.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 
 
 <body>
@@ -18,7 +21,7 @@
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <a href="#inicio" class="w3-bar-item w3-button"><i class="fa fa-home" aria-hidden="true"></i> INÍCIO</a>
+    <a href="#myCarousel_inicio" class="w3-bar-item w3-button"><i class="fa fa-home" aria-hidden="true"></i> INÍCIO</a>
     <a href="#info" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-info"></i> INFO</a>
     <a href="#adopt" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-paw"></i> ADOÇÃO</a>
     <a href="#fat" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-home"></i> FAT</a>
@@ -53,19 +56,104 @@
   </div>
 </div>
 
-<!-- First Parallax Image with Logo -->
-<div class="bgimg-1 w3-display-container w3-opacity-min" id="inicio">
-  <div class="w3-display-middle" style="white-space:nowrap;text-align: center;">
-    <img src="img/Logo_StreetDogs.jpg" class="img_logo" style="width:60%"/>
-  </div>
-  <div class="bottom_redes w3-xlarge w3-section">
-    <a href="https://www.facebook.com/streetdogspt/?fref=ts" class="fa fa-facebook-official w3-hover-text-indigo" style="text-decoration:none"></a>
-    <a href="https://www.instagram.com/streetdogsmail/" class="fa fa-instagram w3-hover-text-purple" style="text-decoration:none"></a>
-  </div>
-</div>
 
 
-<!-- Container Login-->
+<!-- Carousel
+================================================== -->
+<div id="myCarousel_inicio" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel_inicio" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel_inicio" data-slide-to="1"></li>
+    <li data-target="#myCarousel_inicio" data-slide-to="2"></li>
+    <li data-target="#myCarousel_inicio" data-slide-to="3"></li>
+    <li data-target="#myCarousel_inicio" data-slide-to="4"></li>
+    <li data-target="#myCarousel_inicio" data-slide-to="5"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+
+    <div class="item img_carousel1 w3-display-container">
+      <div class="w3-display-middle" style="white-space:nowrap;text-align: center;">
+        <img src="img/Logo_StreetDogs.jpg" class="img_logo" style="width:60%"/>
+      </div>
+      <div class="bottom_redes w3-xlarge w3-section">
+        <a href="https://www.facebook.com/streetdogspt/?fref=ts" class="fa fa-facebook-official w3-hover-text-indigo" style="text-decoration:none"></a>
+        <a href="https://www.instagram.com/streetdogsmail/" class="fa fa-instagram w3-hover-text-purple" style="text-decoration:none"></a>
+      </div>
+
+      <div class="conteudo_dir w3-right" style="border: solid 5px darkblue">
+        <h2>Ajude a ajudar!</h2>
+        <p>A StreetDogs não recebe qualquer tipo de ajuda institucional, por isso todas as
+           ajudas são muito importantes. E há varias formas de ajudar, basta querer. </p>
+        <button class="w3-button btn_laranja w3-center w3-section" type="submit">
+          <a href="#comoajudar" style="text-decoration:none">
+            <i class="fa fa-hand-pointer-o"></i>SABER MAIS
+          </a>
+        </button>
+      </div>
+    </div>
+
+    <div class="item img_carousel2">
+      <div class="conteudo_esq w3-left" style="border: solid 5px orangered">
+        <div class="w3-display-middle">
+          <img src="img/LogoStreetDogs_Sfundo.png" style="display: flex  ">
+        </div>
+      </div>
+      <div class="conteudo_dir w3-right" style="border: solid 5px darkblue">
+        <h2>Ajude a ajudar!</h2>
+        <p>A StreetDogs não recebe qualquer tipo de ajuda institucional, por isso todas as
+          ajudas são muito importantes. E há varias formas de ajudar, basta querer. </p>
+        <button class="w3-button btn_laranja w3-center w3-section" type="submit">
+          <a href="#comoajudar" style="text-decoration:none">
+            <i class="fa fa-hand-pointer-o"></i>SABER MAIS
+          </a>
+        </button>
+      </div>
+    </div>
+
+    <div class="item img_carousel3">
+      <div class="carousel-caption">
+        <h3>Third Image</h3>
+      </div>
+    </div>
+
+    <div class="item img_carousel4">
+      <div class="carousel-caption">
+        <h3>Fourth Image</h3>
+      </div>
+    </div>
+
+    <div class="item img_carousel5">
+      <div class="carousel-caption">
+        <h3>Fifth Image</h3>
+      </div>
+    </div>
+
+    <div class="item img_carousel6">
+      <div class="carousel-caption">
+        <h3>Fifth Image</h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#myCarousel_inicio" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel_inicio" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div><!-- /.carousel -->
+
+
+
+
+
+  <!-- Container Login-->
 
 <div id="id01" class="modal">
 
@@ -870,7 +958,7 @@
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <a href="#inicio" class="w3-button"><i class="fa fa-arrow-up w3-margin-right"></i>Para o topo</a>
+  <a href="#myCarousel_inicio" class="w3-button"><i class="fa fa-arrow-up w3-margin-right"></i>Para o topo</a>
 
   <div class="text-center" style="">
     <p class="primarytextlightback" style="color:white">Copyright &copy; 2017 JULIANA FORTES.</p>

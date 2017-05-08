@@ -5,7 +5,7 @@ body, html {
     line-height: 1.8;
 }
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6 {
+.img_carousel1, .img_carousel2, .img_carousel3, .img_carousel4, .img_carousel5, .img_carousel6, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6 {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -17,15 +17,46 @@ body, html {
   color: #DF7401;
 }
 
+/***** IMAGENS DOS CARROSSEIS *****/
+.img_carousel1{
+    background-image: url("../img/fundo_11.jpg");
+    min-height: 400px;
+}
+
+.img_carousel2{
+    background-image: url("../img/fundo_12.jpg");
+    min-height: 400px;
+}
+
+.img_carousel3{
+    background-image: url("../img/fundo_13.jpg");
+    min-height: 400px;
+}
+
+.img_carousel4{
+    background-image: url("../img/fundo_14.jpg");
+    min-height: 400px;
+}
+
+.img_carousel5{
+    background-image: url("../img/fundo_15.jpg");
+    min-height: 400px;
+}
+
+.img_carousel6{
+    background-image: url("../img/fundo_16.jpg");
+    min-height: 400px;
+}
+
+
+
 .borda_img{
   border: 5px solid #777;
 }
 
-/* First image (Logo. Full height) */
-.bgimg-1 {
-    background-image: url("../img/fundo_1.jpg");
-    min-height: 100%;
-}
+
+/******IMAGENS DAS SECÇÕES*******/
+
 /* Second image (Adoção) */
 .bgimg-2 {
     background-image: url("../img/fundo_2.jpg");
@@ -54,11 +85,6 @@ body, html {
 }
 
 
-.img_logo{
-  max-width: 100%;
-  height: auto;
-}
-
 
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
@@ -70,19 +96,10 @@ body, html {
 }
 
 .foot_redes{
-  font-size:80px!important;
-  display: block;
-  margin-left: 20px;
-  margin-right: auto;
-}
-
-.bottom_redes{
-  font-size:80px!important;
-	position:absolute;
-	top:10%;
-	left:50%;
-	margin-top:-10px;
-	margin-left:-50px;
+    font-size:80px!important;
+     display: block;
+     margin-left: 20px;
+     margin-right: auto;
 }
 
 .inicio_destaques{
@@ -267,3 +284,68 @@ span.psw {
         width: 100%;
     }
 }
+
+
+/*** Carousel ***/
+
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+.full-screen {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/**** Conteudo Carousel ****/
+
+.item{
+
+}
+
+
+.conteudo_esq{
+
+
+    background-size: 70%;
+    position:absolute;
+    top:20%;
+    left:10%;
+
+}
+
+
+.conteudo_dir{
+    position:absolute;
+    top:20%;
+    left:80%;
+    transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+
+}
+
+
+
+
+.bottom_redes{
+    font-size:80px!important;
+    position:absolute;
+    top:40%;
+    left:5%;
+    float: left;
+}
+
+.img_logo{
+    float: left!important;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
