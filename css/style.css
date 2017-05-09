@@ -260,9 +260,6 @@ span.psw {
 
 /**** Conteudo Carousel ****/
 
-.item{
-
-}
 
 .container1{
     position: absolute;
@@ -272,6 +269,7 @@ span.psw {
     -ms-transform:translate(-50%,-50%);
     height: 300px; /* defina a largura da imagem */
     width: 300px; /* defina a altura da imagem */
+    overflow: auto;
 
 }
 
@@ -285,6 +283,7 @@ span.psw {
     background-size: 100%;
     top: 0%;
     left: 38%;
+    overflow: auto;
 
 }
 
@@ -301,6 +300,7 @@ span.psw {
     position: absolute;
     top: 40%;
     left: 70%;
+    overflow: auto;
 
 }
 
