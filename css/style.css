@@ -1,11 +1,11 @@
-body,h1,h2,h3,h4,h5,h6, letras_laranja {font-family: "Lato", sans-serif;}
+body, h1, h2, h3, h4, h5, h6 {font-family: "Lato", sans-serif;}
 body, html {
     height: 100%;
     color: #777;
     line-height: 1.8;
 }
 /* Create a Parallax Effect */
-.img_carousel, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6 {
+.bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6 {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -16,8 +16,6 @@ body, html {
   font-size: 35px;
   color: #DF7401;
 }
-
-
 
 
 .borda_img{
@@ -58,6 +56,7 @@ body, html {
 
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
+
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
     .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
@@ -71,16 +70,6 @@ body, html {
      margin-left: 20px;
      margin-right: auto;
 }
-
-.inicio_destaques{
-  bottom: 0%;
-  position:absolute;
-  text-align: center;
-
-
-
-}
-
 
 
 #parcerias{
@@ -222,8 +211,7 @@ span.psw {
     font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.close:hover, .close:focus {
     color: red;
     cursor: pointer;
 }
@@ -276,42 +264,68 @@ span.psw {
 
 }
 
-
-.conteudo_esq{
-
-
-    background-size: 70%;
-    position:absolute;
-    top:20%;
-    left:10%;
-
-}
-
-
-.conteudo_dir{
-    position:absolute;
-    top:20%;
-    left:80%;
+.container1{
+    position: absolute;
+    top: 70%;
+    left: 20%;
     transform:translate(-50%,-50%);
     -ms-transform:translate(-50%,-50%);
+    height: 300px; /* defina a largura da imagem */
+    width: 300px; /* defina a altura da imagem */
 
 }
 
 
-.bottom_redes{
-    font-size:80px!important;
-    position:absolute;
-    top:40%;
-    left:5%;
-    float: left;
+.container2{
+    background-image: url('../img/Logo_StreetDogs.jpg');
+    background-position:center; /* centraliza apenas o background - para não cortar */
+    height: 400px; /* defina a largura da imagem */
+    width: 400px; /* defina a altura da imagem */
+    background-repeat:no-repeat; /* para não repetir o background */
+    background-size: 100%;
+    top: 0%;
+    left: 38%;
+
 }
+
+
+.img_carousel_dir{
+    background-position:center; /* centraliza apenas o background - para não cortar */
+    height: 150px; /* defina a largura da imagem */
+    width: 150px; /* defina a altura da imagem */
+    background-repeat:no-repeat; /* para não repetir o background */
+    background-size: 100%;
+}
+
+.container3{
+    position: absolute;
+    top: 40%;
+    left: 70%;
+
+}
+
+
 
 .img_logo{
-    float: left!important;
+    text-align: left;
     max-width: 100%;
     height: auto;
+    display:block;
+
 }
 
+.p_carousel{
+    font-size:20px!important;
+    color: black;
+    text-align: left;
+}
+
+.redes{
+    text-align: center;
+    font-size: 70px;
+    flex: auto;
+
+}
 
 
 
