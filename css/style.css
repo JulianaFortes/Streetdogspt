@@ -261,48 +261,67 @@ span.psw {
 /**** Conteudo Carousel ****/
 
 
-.container1{
-    position: absolute;
-    top: 70%;
-    left: 20%;
-    transform:translate(-50%,-50%);
-    -ms-transform:translate(-50%,-50%);
-    height: 300px; /* defina a largura da imagem */
-    width: 300px; /* defina a altura da imagem */
-    overflow: auto;
 
+@media screen and (max-width: 960px) {
+  .container1{
+    padding-top: 10%;
+  }
+
+  .container2{
+    padding-top: 40%;
+    background-image: url(../img/LogoStreetDogs_Sfundo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%;
+  }
+  .container3{
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 }
 
 
-.container2{
-    background-image: url('../img/Logo_StreetDogs.jpg');
-    background-position:center; /* centraliza apenas o background - para não cortar */
-    height: 400px; /* defina a largura da imagem */
-    width: 400px; /* defina a altura da imagem */
-    background-repeat:no-repeat; /* para não repetir o background */
-    background-size: 100%;
-    top: 0%;
-    left: 38%;
-    overflow: auto;
+@media screen and (min-width: 960px){
+  .container1{
+    padding-top: 5%;
+  }
 
+  .container2{
+    padding-top: 40%;
+    background-image: url(../img/LogoStreetDogs_Sfundo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%;
+  }
+  .container3{
+    padding-top: 1%;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+
+@media screen and (min-width: 992px){
+  .container1{
+    padding-top: 25%;
+    padding-left: 10%;
+  }
+
+  .container2{
+    padding-top: 25%;
+    background-image: url(../img/LogoStreetDogs_Sfundo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+  }
+  .container3{
+    padding-top: 20%;
+    padding-right: 7%;
+    padding-left: 2%;
+  }
 }
 
 
-.img_carousel_dir{
-    background-position:center; /* centraliza apenas o background - para não cortar */
-    height: 150px; /* defina a largura da imagem */
-    width: 150px; /* defina a altura da imagem */
-    background-repeat:no-repeat; /* para não repetir o background */
-    background-size: 100%;
-}
-
-.container3{
-    position: absolute;
-    top: 40%;
-    left: 70%;
-    overflow: auto;
-
-}
 
 
 
@@ -326,8 +345,3 @@ span.psw {
     flex: auto;
 
 }
-
-
-
-
-
