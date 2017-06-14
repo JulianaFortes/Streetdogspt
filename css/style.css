@@ -313,20 +313,22 @@ span.psw {
 }
 
 
-
-
-
 .img_logo{
     text-align: left;
     max-width: 100%;
     height: auto;
     display:block;
-
 }
-
-
 
 .redes{
     text-align: center;
     font-size: 50px;
+}
+
+.logo_inicio{
+  padding-top: 20%;
+  background-image: url(../img/Logo_StreetDogs.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25%;
 }
