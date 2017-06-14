@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html" xmlns:style="http://www.w3.org/1999/xhtml">
+<title>StreetDogs</title>
+<link rel="shortcut icon" href="img/icon.png" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/adopt.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="index.html#myCarousel_inicio" class="w3-bar-item w3-button"><i class="fa fa-home" aria-hidden="true"></i> INÍCIO</a>
+    <a href="index.html#info" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-info"></i> INFO</a>
+    <a href="index.html#adopt" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-paw"></i> ADOÇÃO</a>
+    <a href="index.html#fat" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-home"></i> FAT</a>
+    <a href="apelosExt.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-external-link"></i> APELOS EXTERNOS</a>
+    <a href="index.html#historias" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-star-o"></i> HISTÓRIAS DE SUCESSO</a>
+    <a href="index.html#famcarenciadas" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-users"></i> FAMÍLIAS CARENCIADAS</a>
+    <a href="index.html#iniciativas" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-sign-language"></i> INICIATIVAS</a>
+    <a href="index.html#comoajudar" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-hand-paper-o"></i> COMO AJUDAR</a>
+    <a href="index.html#parcerias" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-handshake-o"></i> PARCERIAS</a>
+    <a href="#contatos" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACTOS</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-sign-in"></i> LOGIN</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="index.html#info" class="w3-bar-item w3-button" onclick="toggleFunction()">INFO</a>
+    <a href="index.html#adopt" class="w3-bar-item w3-button" onclick="toggleFunction()">ADOÇÃO</a>
+    <a href="index.html#fat" class="w3-bar-item w3-button" onclick="toggleFunction()">FAT</a>
+    <a href="apelosExt.html" class="w3-bar-item w3-button" onclick="toggleFunction()">APELOS EXTERNOS</a>
+    <a href="index.html#historias" class="w3-bar-item w3-button" onclick="toggleFunction()">HISTÓRIAS DE SUCESSO</a>
+    <a href="index.html#famcarenciadas" class="w3-bar-item w3-button" onclick="toggleFunction()">FAMÍLIAS CARENCIADAS</a>
+    <a href="index.html#iniciativas" class="w3-bar-item w3-button" onclick="toggleFunction()">INICIATIVAS</a>
+    <a href="index.html#comoajudar" class="w3-bar-item w3-button" onclick="toggleFunction()">COMO AJUDAR</a>
+    <a href="index.html#parcerias" class="w3-bar-item w3-button" onclick="toggleFunction()">PARCERIAS</a>
+    <a href="#contatos" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACTOS</a>
+    <a href="#" class="w3-bar-item w3-button" onclick="document.getElementById('id01').style.display='block'">LOGIN</a>
+  </div>
+</div>
+
+
+<!-- Container Login
+================================================== -->
+<div id="id01" class="modal">
+
+  <form class="modal-content animate" action="/indexRegisto.html">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img/Logo_StreetDogs.jpg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      </br>
+      <button class="btn btn-success" type="submit" onclick="check(this.form)">Login</button>
+      <input type="checkbox" checked="checked"> Lembrar
+    </div>
+    </br>
+    <div class="container w3-center">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="btn btn-danger">Cancelar</button>
+    </div>
+    </br>
+  </form>
+</div> <!-- div login -->
+
+
+<div id="inicio" class="container_adopt w3-center">
+  <h2><b>Apelos externos</b></h2><br/>
+  <p class="tamLetras">
+    Aqui podem consultar os apelos que recebemos de entidades externas à StreetDogs.
+  </p>
+  <br>
+  <br>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Container (Contact Section)
+   ================================================== -->
+  <div class="w3-row w3-center w3-dark-grey w3-padding-16 w3-container " id="contatos">
+    <br />
+    <br />
+    <h1><b>CONTACTOS</b></h1>
+    <br />
+    <br />
+  </div>
+  <br />
+  <br />
+  <div>
+  <div class="w3-content w3-container w3-padding-64" >
+    <h3 class="w3-center">SE TIVER ALGUMA DÚVIDA OU NECESSITAR MAIS INFORMAÇÃO NÃO EXITE EM CONTACTAR-NOS</h3>
+    <p class="w3-center"><em>Responderemos com brevidade</em></p>
+
+    <div class="w3-row w3-padding-32 w3-section">
+      <div class="foot_redes ">
+        <a href="https://www.facebook.com/streetdogspt/?fref=ts" class="fa fa-facebook-official w3-hover-text-indigo" style="text-decoration:none"></a>
+        <a href="https://www.instagram.com/streetdogsmail/" class="fa fa-instagram w3-hover-text-purple" style="text-decoration:none"></a>
+      </div>
+      <div class="w3-col m8 w3-panel">
+        <div class="w3-large w3-margin-bottom">
+          <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Localidade: Barcelos, Portugal<br>
+          <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: streetdogs@outlook.pt<br>
+        </div>
+        <p>Dúvidas ou sugestões? Não hesite em deixar mensagem.</p>
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-right w3-section" type="submit">
+            <i class="fa fa-paper-plane"></i> ENVIAR MENSAGEM
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Footer -->
+  <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+    <a href="#inicio" class="w3-button"><i class="fa fa-arrow-up w3-margin-right"></i>Para o topo</a></br>
+  </br>
+    <div class="text-center" style="">
+      <p class="primarytextlightback" style="color:white">Copyright &copy; 2017 JULIANA FORTES.</p>
+      <p class="primarytextlightback" style="color:white">All rights reserved.</p>
+    </div>
+    <div class="w3-xlarge w3-section">
+      <a href="https://www.facebook.com/julianafortes7" class="fa fa-facebook-official w3-hover-text-indigo" style="text-decoration:none"></a>
+      <a href="https://www.instagram.com/julianafortes7/" class="fa fa-instagram w3-hover-text-purple" style="text-decoration:none"></a>
+      <a href="https://www.linkedin.com/in/julifortes/" class="fa fa-linkedin w3-hover-text-indigo" style="text-decoration:none"></a>
+    </div>
+  </footer>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+
+  <script src="/css/cyanOrange.js"></script>
+  <script src="/js/customJavascript.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/login.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
