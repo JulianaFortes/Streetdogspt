@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/html" xmlns:style="http://www.w3.org/1999/xhtml">
-<title>StreetDogs</title>
+<title>>StreetDogs | Resgate Animal</title>
 <link rel="shortcut icon" href="img/icon.png" />
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -308,7 +308,7 @@
 ================================================== -->
 <div id="id01" class="modal">
 
-  <form class="modal-content animate" action="/indexRegisto.html">
+  <form class="modal-content animate" action="indexRegisto.php">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
       <img src="img/Logo_StreetDogs.jpg" alt="Avatar" class="avatar">
@@ -1046,7 +1046,7 @@
         <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: streetdogs@outlook.pt<br>
       </div>
       <p>Dúvidas ou sugestões? Não hesite em deixar mensagem.</p>
-      <form action="/action_page.php" target="_blank">
+      <form id="form-contacto" method="POST" action="mail/mail_contacto.php">
         <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
           <div class="w3-half">
             <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
@@ -1055,8 +1055,8 @@
             <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
           </div>
         </div>
-        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-        <button class="w3-button w3-black w3-right w3-section" type="submit">
+        <textarea class="w3-input w3-border" type="text" placeholder="Message" rows="5" required name="message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit" name="btn_enviar">
           <i class="fa fa-paper-plane"></i> ENVIAR MENSAGEM
         </button>
       </form>
